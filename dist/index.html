@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header>
+        <span>Player 1</span>
+        <span>Player 2</span>
+    </header>
+    <div id="settings">
+        <div>
+            <label for="board-columns">Board columns</label>
+            <input type="text" name="board-columns" id="board-columns">
+            <label for="board-rows">Board rows</label>
+            <input type="text" name="board-rows" id="board-rows">
+        </div>
+        <div id="player-1">
+            <label for="player1-name">Name for player 1</label>
+            <input type="text" name="player1-name" id="player1-name">
+        </div>
+        <div id="player-2">
+            <label for="player2-name">Name for player 2</label>
+            <input type="text" name="player2-name" id="player2-name">
+        </div>
+        <button>Submit</button>
+    </div>
+    <div id="main-content">
+        <div class="game-display">
+            <div>
+                <p id="P1-Name">Name 1</p>
+                <div class="gameboard" id="gameboard-1"></div>
+                <div>
+                    <label for="p1Attack">Attack coordinates</label>
+                    <input type="text" name="p1Attack" id="p1Attack">
+                    <button class="atkButton">Attack!</button>
+                </div>
+            </div>
+            <p id="display-turn">Player x turn</p>          
+            <p id="display-turn-result">Attack status</p>   
+            <div>
+                <p id="P2-Name">Name 2</p>
+                <div class="gameboard" id="gameboard-2"></div>
+                <!-- <div>
+                    <label for="p2Attack">Attack coordinates</label>
+                    <input type="text" name="p2Attack" id="p2Attack">
+                    <button class="atkButton">Attack!</button>
+                </div> -->
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
